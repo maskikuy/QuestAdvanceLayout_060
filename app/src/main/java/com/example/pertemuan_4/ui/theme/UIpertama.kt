@@ -37,18 +37,24 @@ fun ActivitasPertama(modifier: Modifier){
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(stringResource(R.string.prodi),
+        Text(
+            stringResource(R.string.prodi),
             fontSize = 35.sp,
-            fontWeight = FontWeight.Bold)
-        Text(stringResource( R.string.univ),
-            fontSize = 22.sp)
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            stringResource(R.string.univ),
+            fontSize = 22.sp
+        )
         Spacer(modifier = Modifier.height(25.dp))
-        Card (modifier = modifier
-            .fillMaxWidth(1f)
-            .padding(12.dp),
+        Card(
+            modifier = modifier
+                .fillMaxWidth(1f)
+                .padding(12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
-            )){
+            )
+        ) {
             Row() {
                 val gambar = painterResource(R.drawable.Logo_real)
                 Image(
@@ -69,7 +75,7 @@ fun ActivitasPertama(modifier: Modifier){
                         stringResource(R.string.alamat),
                         fontSize = 20.sp,
                         color = Color.Yellow,
-                        modifier = Modifier.padding(top=10.dp)
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
@@ -77,12 +83,13 @@ fun ActivitasPertama(modifier: Modifier){
         Box(
             modifier = Modifier
                 .fillMaxSize()
-        ){
+        ) {
             Text(
                 stringResource(R.string.copy),
                 modifier = Modifier
-                    .align ( Alignment.BottomCenter )
+                    .align(Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
             )
         }
+    }
 }

@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
@@ -35,10 +36,10 @@ fun ActivitasPertama(modifier: Modifier){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(stringResource(R.string.prodi),
-            fontsize = 35.sp,
-            fontweight = FontWeight.Bold)
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold)
         Text(stringResource( R.string.univ),
-            fontsize = 22.sp)
+            fontSize = 22.sp)
         Spacer(modifier = Modifier.height(25.dp))
         Card (modifier = modifier
             .fillMaxWidth(1f)
@@ -55,7 +56,17 @@ fun ActivitasPertama(modifier: Modifier){
                 )
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
+                    Text(
+                        stringResource(R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
 
+                    )
+                }
                 }
             }
         }
